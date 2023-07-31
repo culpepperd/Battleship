@@ -27,6 +27,9 @@ var model = {
 			var index = ship.locations.indexOf(guess);
 			if (index >= 0) {
 				ship.hits[index] = "hit";
+				if (this.isSunk(ship)) {
+					this.shipsSunk++;
+                }
 				return true;
 			}
 		}
