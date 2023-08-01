@@ -30,6 +30,7 @@ var model = {
 				view.displayHit(guess);
 				view.displayMessage("HIT!");
 				if (this.isSunk(ship)) {
+					view.displayMessage("You sank my battleship!");
 					this.shipsSunk++;
                 }
 				return true;
