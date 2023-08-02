@@ -11,4 +11,6 @@ model.fire("44");
 
 model.fire("12");
 model.fire("11");
-model.fire("10"); 
+model.fire("10");
+
+controller.parseGuess("11");

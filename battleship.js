@@ -50,3 +50,22 @@ var model = {
     }
 };
 
+var controller = {
+	guesses: 0,
+
+	processGuess: function (guess) {
+
+	},
+
+	parseGuess: function (guess) {
+		var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
+
+		if (guess === null || guess.length !== 2) {
+			alert("Please enter a letter and a number on the board.");
+		} else {
+			firstChar = guess.charAt(0);
+			var row = alphabet.indexOf(firstChar);
+        }
+    }
+
+};
