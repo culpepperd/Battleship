@@ -18,9 +18,9 @@ var model = {
 	numShips: 3,
 	shipLength: 3,
 	shipsSunk: 0,
-	ships: [{ locations: ["31", "41", "51"], hits: ["", "", ""] },
-			{ locations: ["14", "24", "34"], hits: ["", "", ""] },
-			{ locations: ["00", "01", "02"], hits: ["", "", ""] }],
+	ships: [{ locations: ["06", "16", "26"], hits: ["", "", ""] },
+			{ locations: ["24", "34", "44"], hits: ["", "", ""] },
+			{ locations: ["10", "11", "12"], hits: ["", "", ""] }],
 	fire: function (guess) {
 		for (var i = 0; i < this.numShips; i++) {
 			var ship = this.ships[i];
@@ -49,3 +49,18 @@ var model = {
 		return true;
     }
 };
+
+model.fire("53");
+model.fire("00");
+
+model.fire("06");
+model.fire("16");
+model.fire("26");
+
+model.fire("34");
+model.fire("24");
+model.fire("44");
+
+model.fire("12");
+model.fire("11");
+model.fire("10");
