@@ -1,3 +1,4 @@
+/*
 model.fire("53");
 model.fire("00");
 
@@ -12,9 +13,17 @@ model.fire("44");
 model.fire("12");
 model.fire("11");
 model.fire("10");
+*/
+console.log(processGuess("A0"));
 
-console.log(parseGuess("A0"));
-console.log(parseGuess("B6"));
-console.log(parseGuess("G3"));
-console.log(parseGuess("H0"));
-console.log(parseGuess("A7"));
+console.log(processGuess("A6"));
+console.log(processGuess("B6"));
+console.log(processGuess("C6"));
+
+console.log(processGuess("C4"));
+console.log(processGuess("D4"));
+console.log(processGuess("E4"));
+
+console.log(processGuess("B0"));
+console.log(processGuess("B1"));
+console.log(processGuess("B2"));

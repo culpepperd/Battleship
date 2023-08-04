@@ -66,7 +66,7 @@ var controller = {
 	},
 };
 
-function parseGuess(guess) {
+function processGuess(guess) {
 	var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
 
 	if (guess === null || guess.length !== 2) {
