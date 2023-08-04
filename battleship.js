@@ -65,7 +65,18 @@ var controller = {
 		} else {
 			firstChar = guess.charAt(0);
 			var row = alphabet.indexOf(firstChar);
-        }
+			var column = guess.charAt(1);
+
+			if (isNaN(row) || isNaN(column)) {
+				alert("That is not on the board.");
+			} else if (row < 0 || row >= model.boardSize ||
+					   column < 0 || column >= model.boardSize) {
+				alert("That's off the board!");
+			} else {
+				return row + column;
+            }
+		}
+		return null;
     }
 
 };

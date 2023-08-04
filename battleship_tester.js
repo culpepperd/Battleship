@@ -13,4 +13,8 @@ model.fire("12");
 model.fire("11");
 model.fire("10");
 
-controller.parseGuess("11");
+console.log(controller.parseGuess("A0"));
+console.log(controller.parseGuess("B6"));
+console.log(controller.parseGuess("G3"));
+console.log(controller.parseGuess("H0"));
+console.log(controller.parseGuess("A7"));
