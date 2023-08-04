@@ -54,7 +54,7 @@ var controller = {
 	guesses: 0,
 
 	processGuess: function (guess) {
-		var location = this.parseGuess(guess);
+		var location = parseGuess(guess);
 		if (location) {
 			this.guesses++;
 			var hit = model.fire(location);
@@ -63,10 +63,10 @@ var controller = {
 					this.guesses + " guesses.");
 			}
 		}
-	},
+	}
 };
 
-function processGuess(guess) {
+function parseGuess(guess) {
 	var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
 
 	if (guess === null || guess.length !== 2) {

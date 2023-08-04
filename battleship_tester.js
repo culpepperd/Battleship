@@ -1,29 +1,14 @@
-/*
-model.fire("53");
-model.fire("00");
+console.log(controller.processGuess("A0"));
+console.log(controller.processGuess("G6"));
 
-model.fire("06");
-model.fire("16");
-model.fire("26");
+console.log(controller.processGuess("A6"));
+console.log(controller.processGuess("B6"));
+console.log(controller.processGuess("C6"));
 
-model.fire("34");
-model.fire("24");
-model.fire("44");
+console.log(controller.processGuess("C4"));
+console.log(controller.processGuess("D4"));
+console.log(controller.processGuess("E4"));
 
-model.fire("12");
-model.fire("11");
-model.fire("10");
-*/
-console.log(processGuess("A0"));
-
-console.log(processGuess("A6"));
-console.log(processGuess("B6"));
-console.log(processGuess("C6"));
-
-console.log(processGuess("C4"));
-console.log(processGuess("D4"));
-console.log(processGuess("E4"));
-
-console.log(processGuess("B0"));
-console.log(processGuess("B1"));
-console.log(processGuess("B2"));
+console.log(controller.processGuess("B0"));
+console.log(controller.processGuess("B1"));
+console.log(controller.processGuess("B2"));
