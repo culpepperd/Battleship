@@ -62,18 +62,20 @@ var model = {
 		var row, col;
 
 		if (direction === 1) {
-			// Generate a starting location for a horizontal ship
+			row = Math.floor(Math.random() * this.boardSize);
+			col = Math.floor(Math.random() * (this.boardSize - this.shipLength));
 		} else {
-			// Generate a starting location for a vertical ship
+			row = Math.floor(Math.random() * (this.boardSize - this.shipLength));
+			col = Math.floor(Math.random() * this.boardSize);
 		}
 
 		var newShipLocations = [];
 		for (var i = 0; i < this.shipLength; i++) {
 			if (direction === 1) {
-				// add location to array for new horizontal ship
+				newShipLocations.push(row + "" + (col + i));
 			} else {
-				// add location to array for new vertical ship
-            }
+				newShipLocations.push((row + i) + "" + col);
+			}
 		}
 		return newShipLocations;
     }
